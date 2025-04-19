@@ -1,0 +1,45 @@
+@use "../helpers" as *;
+
+.footer {
+  padding-bottom: rem(10);
+  &__inner {
+    padding-top: rem(96);
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: cenfter;
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
+
+    &-column {
+      flex: 1 1 calc(50% - 20px);
+    }
+    &-logo {
+      margin-inline: auto;
+    }
+
+    &-item,
+    &-title {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      margin-bottom: rem(15);
+    }
+
+    &-main-link,
+    &-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-light);
+      padding-block-start: rem(36);
+    }
+
+    &-link {
+      font-size: rem(12);
+    }
+  }
+}

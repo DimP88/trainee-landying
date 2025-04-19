@@ -1,0 +1,6 @@
+@use "../helpers" as *;
+
+.logo {
+  display: block;
+  max-width: fluid(140, 60);
+}

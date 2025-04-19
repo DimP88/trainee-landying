@@ -1,0 +1,12 @@
+@use "../helpers/" as *;
+
+.cocktails {
+  text-align: center;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: rem(30);
+  }
+}

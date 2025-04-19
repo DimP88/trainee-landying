@@ -1,0 +1,16 @@
+@use "../helpers/" as *;
+
+.get-menu {
+  background-color: var(--color-grey);
+  &__inner {
+    display: flex;
+    gap: rem(20);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    @include mobile-above {
+      flex-direction: row;
+    }
+  }
+}

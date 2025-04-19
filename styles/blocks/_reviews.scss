@@ -1,0 +1,46 @@
+@use "../helpers/" as *;
+
+.reviews {
+  text-align: center;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+    @include mobile-above {
+      flex-direction: row;
+    }
+    gap: rem(120);
+    max-width: rem(852);
+
+    &-foto {
+      flex: 1;
+    }
+
+    &-review {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: rem(368);
+
+      @include mobile-above {
+        max-width: none;
+      }
+
+      img {
+        margin-bottom: rem(37);
+      }
+
+      h4 {
+        margin-bottom: rem(8);
+      }
+
+      p {
+        font-size: rem(12);
+      }
+    }
+  }
+}

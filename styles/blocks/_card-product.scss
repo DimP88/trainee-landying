@@ -1,0 +1,25 @@
+@use "../helpers/" as *;
+
+.card-product {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-grey);
+  width: rem(262);
+  height: rem(324);
+  border-radius: rem(10);
+  overflow: hidden;
+  text-align: center;
+  object-fit: cover;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: rem(3) rem(3);
+  }
+
+  &__title {
+    margin: rem(28) rem(0) rem(13);
+  }
+}

@@ -1,0 +1,23 @@
+@use "../helpers" as *;
+
+.button {
+  padding: rem(15) rem(36);
+  background-color: var(--color-accent);
+  border-radius: 5px;
+  color: var(--color-light);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border: none;
+
+  @include tablet {
+    padding: rem(10) rem(24);
+  }
+
+  @include hover {
+    outline: var(--color-light) 1px solid;
+    transition-duration: var(--transition-duration);
+    color: var(--color-grey);
+  }
+}

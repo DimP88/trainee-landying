@@ -1,0 +1,21 @@
+@use "normalise";
+@use "fonts";
+@use "variables";
+@use "utils";
+@use "globals";
+
+@use "blocks/icon";
+@use "blocks/logo";
+@use "blocks/button";
+@use "blocks/burger-button";
+@use "blocks/header";
+@use "blocks/hero";
+@use "blocks/hot-deals";
+@use "blocks/reviews";
+@use "blocks/get-menu";
+@use "blocks/products";
+@use "blocks/cocktails";
+@use "blocks/card-product";
+@use "blocks/card-cocktail";
+@use "blocks/socials";
+@use "blocks/footer";

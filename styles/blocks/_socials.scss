@@ -1,0 +1,7 @@
+@use "../helpers" as *;
+
+.socials {
+  display: flex;
+  column-gap: rem(10);
+  justify-content: center;
+}

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger || Fast food</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="JS/main.js" type="module"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a class="header__logo logo" href="/" title="Home" aria-label="Home">
+          <img src="images/icons/logo.png" alt="" />
+        </a>
+        <div class="header__overlay" id="header-overlay">
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="#hero" class="header__menu-link is-active">HOME</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#hot-deals" class="header__menu-link">HOT DEALS</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#products" class="header__menu-link">OUR OFFER</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#cocktails" class="header__menu-link">PRICING</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#menu" class="header__menu-link">MENU</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="/" class="header__button button">ORDER NOW</a>
+        </div>
+        <button
+          class="header__burger-button burger-button visible-mobile"
+          aria-label="Open menu"
+          title="Open menu"
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero__inner container">
+          <div class="hero__wrepper" id="hero">
+            <span>FAST FOOD BURGERS</span>
+            <h1 class="hero__title">The fastest food, for instant hunger.</h1>
+            <p>
+              Some food has looked so awful that it's looked like something that
+              the dog's brought home, yet after one mouthful I've been left
+              eating my thoughts, my words & my food and gone back for seconds.
+            </p>
+            <a href="#" class="hero__button button">ORDER NOW</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="hot-deals container section" id="hot-deals">
+        <div class="hot-deals__inner mySoloSwiper">
+          <div class="hot-deals__swiper swiper-wrapper">
+            <div class="hot-deals__swiper-item swiper-slide">
+              <img
+                class="hot-deals__img"
+                src="images/slider-solo (1).jpg"
+                alt=""
+              />
+            </div>
+            <div class="hot-deals__swiper-item swiper-slide">
+              <img
+                class="hot-deals__img"
+                src="images/slider-solo (2).jpg"
+                alt=""
+              />
+            </div>
+            <div class="hot-deals__swiper-item swiper-slide">
+              <img
+                class="hot-deals__img"
+                src="images/slider-solo (3).jpg"
+                alt=""
+              />
+            </div>
+            <div class="hot-deals__swiper-item swiper-slide">
+              <img
+                class="hot-deals__img"
+                src="images/slider-solo (1).jpg"
+                alt=""
+              />
+            </div>
+            <div class="hot-deals__swiper-item swiper-slide">
+              <img
+                class="hot-deals__img"
+                src="images/slider-solo (2).jpg"
+                alt=""
+              />
+            </div>
+            <div class="hot-deals__swiper-item swiper-slide">
+              <img
+                class="hot-deals__img"
+                src="images/slider-solo (3).jpg"
+                alt=""
+              />
+            </div>
+            <div class="hot-deals__swiper-item swiper-slide">
+              <img
+                class="hot-deals__img"
+                src="images/slider-solo (1).jpg"
+                alt=""
+              />
+            </div>
+            <div class="hot-deals__swiper-item swiper-slide">
+              <img
+                class="hot-deals__img"
+                src="images/slider-solo (2).jpg"
+                alt=""
+              />
+            </div>
+            <div class="hot-deals__swiper-item swiper-slide">
+              <img
+                class="hot-deals__img"
+                src="images/slider-solo (3).jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-pagin pagination">
+            <span class="pagination__button"></span>
+            <span class="pagination__button"></span>
+            <span class="pagination__button"></span>
+            <span class="pagination__button"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="products container section" id="products">
+        <h2 class="section-title">Star of the Menu</h2>
+        <div class="products__inner">
+          <button class="products__button button-next" type="button">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 512 512"
+            >
+              <g id="arr-left"></g>
+              <path
+                d="M256 480c123.712 0 224-100.288 224-224s-100.288-224-224-224-224 100.288-224 224 100.288 224 224 224zM256 74c100.516 0 182 81.484 182 182s-81.484 182-182 182-182-81.484-182-182 81.484-182 182-182z"
+              ></path>
+              <path
+                d="M324.8 170.799l-39.599-39.599-124.799 124.799 124.799 124.799 39.597-39.597-85.201-85.201z"
+              ></path>
+            </svg>
+          </button>
+          <div class="products__slider swiper-container">
+            <ul class="products__list swiper-wrapper">
+              <li class="products__list-item swiper-slide">
+                <article class="card-product">
+                  <img src="images/food-list-1.jpg" alt="" />
+                  <div class="card-product__wrapper">
+                    <h4 class="card-product__title">Chicken Paella</h4>
+                    <p>We just don't make and sell food.Good food warms.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="products__list-item swiper-slide">
+                <article class="card-product">
+                  <img src="images/food-list-2.jpg" alt="" />
+                  <div class="card-product__wrapper">
+                    <h4 class="card-product__title">Taco Del Mar</h4>
+                    <p>
+                      Taco Del Mar brings the best out of Mexican cuisine with
+                      fresh
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li class="products__list-item swiper-slide">
+                <article class="card-product">
+                  <img src="images/food-list-3.jpg" alt="" />
+                  <div class="card-product__wrapper">
+                    <h4 class="card-product__title">Bon Au Pain</h4>
+                    <p>
+                      Bon Au Pain is a pioneer in the healthy fast food scene.
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li class="products__list-item swiper-slide">
+                <article class="card-product">
+                  <img src="images/food-list-4.jpg" alt="" />
+                  <div class="card-product__wrapper">
+                    <h4 class="card-product__title">Pizza Hut</h4>
+                    <p>
+                      Although the Pizza Hut Menu Prices have tumbled over the
+                      years.
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li class="products__list-item swiper-slide">
+                <article class="card-product">
+                  <img src="images/food-list-1.jpg" alt="" />
+                  <div class="card-product__wrapper">
+                    <h4 class="card-product__title">Chicken Paella</h4>
+                    <p>We just don't make and sell food.Good food warms.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="products__list-item swiper-slide">
+                <article class="card-product">
+                  <img src="images/food-list-2.jpg" alt="" />
+                  <div class="card-product__wrapper">
+                    <h4 class="card-product__title">Taco Del Mar</h4>
+                    <p>
+                      Taco Del Mar brings the best out of Mexican cuisine with
+                      fresh
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li class="products__list-item swiper-slide">
+                <article class="card-product">
+                  <img src="images/food-list-3.jpg" alt="" />
+                  <div class="card-product__wrapper">
+                    <h4 class="card-product__title">Bon Au Pain</h4>
+                    <p>
+                      Bon Au Pain is a pioneer in the healthy fast food scene.
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li class="products__list-item swiper-slide">
+                <article class="card-product">
+                  <img src="images/food-list-4.jpg" alt="" />
+                  <div class="card-product__wrapper">
+                    <h4 class="card-product__title">Pizza Hut</h4>
+                    <p>
+                      Although the Pizza Hut Menu Prices have tumbled over the
+                      years.
+                    </p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <div class="pagination">
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
+            </div>
+          </div>
+          <button class="products__button button-prev" type="button">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 512 512"
+            >
+              <g id="arr-right"></g>
+              <path
+                d="M256 0c-141.385 0-256 114.615-256 256s114.615 256 256 256 256-114.615 256-256-114.615-256-256-256zM256 464c-114.875 0-208-93.125-208-208s93.125-208 208-208 208 93.125 208 208-93.125 208-208 208z"
+              ></path>
+              <path
+                d="M177.372 353.372l45.256 45.256 142.627-142.628-142.628-142.627-45.254 45.254 97.372 97.373z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="cocktails container section" id="cocktails">
+        <h2 class="section-title">Cocktails</h2>
+        <div class="cocktails__inner">
+          <div class="cocktails__inner-card card-cocktail">
+            <div class="card-cocktail__wrapper">
+              <h3>Dairy Queen</h3>
+              <p class="card-cocktail__text">
+                Dairy Queen is one of the biggest fast-food.
+              </p>
+              <p class="card-cocktail__price">$4 <s>$6</s></p>
+              <button class="button card-cocktail__button" type="button">
+                Order now
+              </button>
+            </div>
+            <img class="card-cocktail__img" src="images/product-1.jpg" alt="" />
+          </div>
+          <div class="cocktails__inner-card card-cocktail">
+            <div class="card-cocktail__wrapper">
+              <h3>Milkshake</h3>
+              <p class="card-cocktail__text">
+                A creamy, chilled blend of milk and ice cream.
+              </p>
+              <p class="card-cocktail__price">$3 <s>$5</s></p>
+              <button class="button card-cocktail__button" type="button">
+                Order now
+              </button>
+            </div>
+            <img class="card-cocktail__img" src="images/product-2.jpg" alt="" />
+          </div>
+          <div class="cocktails__inner-card card-cocktail">
+            <div class="card-cocktail__wrapper">
+              <h3>Dairy Queen</h3>
+              <p class="card-cocktail__text">
+                Dairy Queen is one of the biggest fast-food.
+              </p>
+              <p class="card-cocktail__price">$5 <s>$7</s></p>
+              <button class="button card-cocktail__button" type="button">
+                Order now
+              </button>
+            </div>
+            <img class="card-cocktail__img" src="images/product-3.jpg" alt="" />
+          </div>
+          <div class="cocktails__inner-card card-cocktail">
+            <div class="card-cocktail__wrapper">
+              <h3>Kiwi Banana</h3>
+              <p class="card-cocktail__text">
+                A refreshing blend of ripe kiwi and banana.
+              </p>
+              <p class="card-cocktail__price">$2 <s>$3</s></p>
+              <button class="button card-cocktail__button" type="button">
+                Order now
+              </button>
+            </div>
+            <img class="card-cocktail__img" src="images/product-4.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews container section">
+        <div class="reviews__inner">
+          <div class="reviews__inner-foto">
+            <img src="images/feedback.png" alt="" />
+          </div>
+          <div class="reviews__inner-review">
+            <img src="images/icons/rewiews.png" alt="" />
+            <p>
+              Thanks a lot for the prompt service. Really appreciate. Excellence
+              taste in Every Bite.Add a joy of best Taste. Foodie Moments.
+            </p>
+            <h4>Adele A. McNeill</h4>
+            <p>AMERICAN</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="get-menu container section" id="menu">
+        <div class="get-menu__inner">
+          <h3>Download Our Menu</h3>
+          <button class="button" type="button">DOWNLOAD</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner container">
+        <nav class="footer__menu">
+          <div class="footer__menu-column">
+            <a href="/" class="footer__menu-logo logo">
+              <img
+                src="images/icons/logo1.png"
+                alt=""
+                aria-label="Home"
+                title="Home"
+              />
+            </a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <img src="images/icons/mail.svg" alt="" /><a
+                  class="footer__menu-link"
+                  href="mailto:fastfood_usa@gmail.com"
+                  >fastfood_usa@gmail.com</a
+                >
+              </li>
+              <li class="footer__menu-item">
+                <img src="images/icons/global.svg" alt="" />
+                <a class="footer__menu-link" href="#">www.fastfood_usa.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <h4 class="footer__menu-title">Our menu</h4>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Breakfast</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Lunce </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Dinner</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <h4 class="footer__menu-title">Information</h4>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">About us</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Testimonial</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Event</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <h4 class="footer__menu-title">Useful Links</h4>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Breakfast</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Lunce </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Dinner</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <h4 class="footer__menu-title">Social Handles</h4>
+            <div class="footer__socials socials">
+              <a
+                href="https://www.facebook.com/"
+                class="socials__link"
+                target="_blank"
+                ><img
+                  aria-label="facebook"
+                  title="facebook"
+                  src="images/icons/socials/facebook.png"
+                  alt=""
+              /></a>
+              <a href="#" class="socials__link" target="_blank"
+                ><img
+                  aria-label="instagram"
+                  title="instagram"
+                  src="images/icons/socials/instagram.png"
+                  alt=""
+              /></a>
+              <a href="#" class="socials__link" target="_blank"
+                ><img
+                  aria-label="twitter"
+                  title="twitter"
+                  src="images/icons/socials/twitter.png"
+                  alt=""
+              /></a>
+              <a href="#" class="socials__link" target="_blank"
+                ><img
+                  aria-label="linkedin"
+                  title="linkedin"
+                  src="images/icons/socials/linkedin.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./JS/slider-product.js"></script>
+    <script src="JS/solo-slider.js"></script>
+  </body>
+</html>
